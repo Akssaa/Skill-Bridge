@@ -1,0 +1,429 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f9fbff;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.navbar .logo img {
+  height: 50px;
+}
+
+.navbar nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.navbar nav a.active {
+  color: #0066ff;
+}
+/* HEADER */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar h2 {
+  color: #0066ff;
+}
+
+.navbar nav a {
+  color: #333;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar nav a.active,
+.navbar nav a:hover {
+  color: #0066ff;
+}
+
+
+/* HERO */
+.hero-internships {
+height: 90vh; /* same as home page */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  background: linear-gradient(135deg, #0066ff, #00c896);
+  color: white;
+  overflow: hidden;
+}
+.hero-content h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  opacity: 0.9;
+  margin-bottom: 40px;
+}
+
+.hero-right img {
+  width: 450px !important;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+/* HERO IMAGE ANIMATION */
+.hero-right img {
+  width: 320px;
+  max-width: 100%;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* FLOAT ANIMATION */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+/* SEARCH BAR */
+.hero-search {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.hero-search input {
+  flex: 1;
+  padding: 12px 15px;
+  border-radius: 25px 0 0 25px;
+  border: none;
+  font-size: 16px;
+}
+
+.hero-search button {
+  padding: 12px 25px;
+  border-radius: 0 25px 25px 0;
+  border: none;
+  background: linear-gradient(135deg, #00c896, #0066ff);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* SECTION HEADINGS */
+.companies h2 {
+  font-size: 32px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #0066ff, #00c896);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* COMPANIES GRID */
+.companies {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+/* CARDS */
+.category-card {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.category-card:hover {
+  transform: translateY(-10px);
+}
+
+.category-card img {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+.category-card h3 {
+  margin-bottom: 15px;
+  color: #0b2b66;
+}
+
+/* BUTTON */
+.btn-gradient {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #0066ff, #00c896);
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-gradient:hover {
+  transform: scale(1.05);
+}
+
+/* ================= STATS (FIXED DESIGN) ================= */
+
+.stats {
+  background: linear-gradient(135deg, #0066ff, #00c896);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 10%;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  flex: 1;
+  min-width: 200px;
+}
+
+.stat-box h3 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.stat-box p {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* ================= CONTACT ================= */
+
+.contact {
+  padding: 80px 10%;
+  background: #f4f7ff;
+}
+
+.contact-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* LEFT SIDE */
+.contact-text {
+  flex: 1;
+}
+
+.contact-text h2 {
+  font-size: 32px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #0066ff, #00c896);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.contact-text p {
+  margin-bottom: 20px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.contact-info p {
+  margin: 8px 0;
+  font-weight: 500;
+}
+
+/* RIGHT SIDE FORM */
+.contact-form {
+  flex: 1;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* INPUTS (FIXED PLACEHOLDER DESIGN) */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #999;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border: 2px solid #0066ff;
+}
+
+/* LOCATION SECTION SIDE-BY-SIDE */
+.location-section {
+  padding: 60px 10%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap; /* allows stacking on smaller screens */
+}
+/* LOCATION SECTION SIDE-BY-SIDE */
+.location-section {
+  padding: 60px 10%;
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* make children equal height */
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* GRADIENT HIGHLIGHTED TEXT */
+.location-text {
+  background: linear-gradient(135deg, #0066ff, #00c896);
+  padding: 30px 20px;
+  border-radius: 20px;
+  color: white;
+  flex: 1; /* same width as map */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* center content vertically */
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  min-height: 400px; /* same as map height */
+}
+
+.location-text h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.location-text p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* MAP WITH GRADIENT BORDER */
+.map-wrapper {
+  flex: 1;
+  max-width: 600px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #0066ff, #00c896);
+  padding: 4px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  min-height: 400px; /* same as location box */
+}
+
+.map-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  border: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .location-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .location-text, .map-wrapper {
+    max-width: 100%;
+    min-height: 300px; /* adjust for mobile */
+  }
+}
+
+/* ================= CHATBOT ================= */
+
+.chatbot-bubble {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #0066ff, #00c896);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.chatbot-popup {
+  position: fixed;
+  bottom: 100px;
+  right: 25px;
+  width: 350px;
+  background: white;
+  border-radius: 15px;
+  display: none;
+  flex-direction: column;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  z-index: 9999;
+}
+
+/* FOOTER */
+footer {
+  background: linear-gradient(to right, #0066ff, #00c896);
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero-internships {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .location-section,
+  .contact-container,
+  .stats {
+    flex-direction: column;
+    align-items: center;
+  }
+}
